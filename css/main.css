@@ -95,18 +95,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/** BASE STYLES **/
-
+/****** BASE STYLES ******/
 html, body{
     font-size: 16px; 
     font-family: 'Source Sans Pro', sans-serif;
     color: #000;
     background-color: #fff;
-}
+    min-width: 340px;
 
+}
 a{
     text-decoration: none;
-    color: #222;
+    color: #828282;
 }
 a:hover{
     color:#f9ceb7;
@@ -126,7 +126,6 @@ h1{
 h2 {
     font-family: 'Lora', serif;
     font-size: 1.5em;
-
 }
 span {
     color:#222;
@@ -134,23 +133,46 @@ span {
 #logo, header h2 {
     font-family: 'Lora', serif;
 }
+.icon-img{
+    margin: 0 auto;
+    min-width: 100px;
+    max-width: 350px;
+}
 #about, #work {
     border-top: 1px solid #ebebeb;
 }
-#about, #work, #contact {
+
+#about {
+    padding: 0 10px ;
 }
 #work {
     background-color: #f9ceb7;
 }
-#about {
-    padding: 0 10px ;
+#contact {
+    background-color: #ebebeb;
+    text-align: center;
 }
 
-/** Header **/
+/****** GRID ******/
+
+.full-width {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; 
+}
+.half-width {
+    width: 100%;
+}
+.third-width {
+    width: 100%;
+}
+
+
+/****** Header ******/
 #logo {
     text-align: center;
     margin: 0 auto;
-    padding: 1px 0;
+    padding: 20px 0 5px 0;
     color: #bbc085;
     font-size: 2.25em;
 }
@@ -161,12 +183,12 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0 auto;
+    overflow: auto;
 }
 nav ul li {
     text-align: center;
-    margin: auto;
     padding: 15px 0;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid #d2d0d0;
 }
 nav ul li a {
     font-size: 1.125em;
@@ -192,12 +214,14 @@ header span {
     color:#222;
 }
 
-/** Main Section **/
+/****** Main Section ******/
 #about p {
     margin: 30px 0;
     line-height: 1.5em;
 }
-
+#icon-img {
+    
+}
 #work {
     text-align: center;
     padding: 20px 0 20px 0;
@@ -214,23 +238,23 @@ header span {
 }
 .third-width {
     padding-top: 10px;
-
 }
 
-/** Footer **/
+/****** Footer ******/
 
-#contact{
-    background-color: #ebebeb;
-    text-align: center;
-    margin: 0 0 10px 0;
+#contact-img {
+    margin: 0 auto;
+    min-width: 100px;
+    max-width: 500px;
 }
 #contact img {
     width: 90%;
     border: 8px solid #fff;
     margin: 20px 0 0 0;
 }
-#contact-info{
-    padding: 0 0 20px 0; 
+
+#contact-info{ 
+    display: inline; 
 }
 #contact-info h2 {
     margin-bottom: 1px;
@@ -246,13 +270,11 @@ header span {
 #email {
     display: inline-block; 
     margin-bottom: 5px;
-    position: relative;
-    right: 1%;
 }
 #contact ul {
     display: inline-block;
-    position: relative;
-    right: 5%;
+    padding: 0;
+    text-align: center;
 }
 #contact-info ul li {
     list-style: none;
@@ -263,7 +285,6 @@ header span {
     width: 12%;
     padding: 0 7px 0 7px;
     margin: 0 auto;
-
 }
 
 
@@ -357,24 +378,94 @@ header span {
    Modify as content requires.
    ========================================================================== */
 
-@media (min-width:940px) {
-	/* Header =========================== */
 
-.full-width {
-    width 100%;
-}
-
-.half-width{
-    width: 100%;
-}
-
-.third-width{
-    width: 33%;
-}
-nav ul li a:hover{
-    color:#bbc085;
-    }
+/** Tablet **/
+@media (min-width:768px) {
     
+/* GRID =========================== */
+
+
+.half-width {
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+}
+
+
+/* Header =========================== */
+
+header {
+    background-image: url("../img/hero.png");
+    background-repeat:no-repeat;
+    background-size: cover; 
+    background-position:center;
+}   
+#logo {
+    width: 98%; 
+    float: left;
+    text-align: left;
+    font-size: 1.75em;
+    padding: 5% 0 0 2%;
+}
+header nav {
+    width: 100%;
+    padding: 5% 0 0 0;
+}  
+
+nav ul li {
+    text-align: none;
+    padding: 0px 5% 0 10%;
+    margin: 5% 0px 0 2%;
+    border-bottom: none;
+    float: right;
+}
+header h2 {
+ font-size: 3em;       
+}
+
+/* Main Section =========================== */
+    
+#about{
+    overflow: auto;
+    
+}
+
+#about h2 {
+   width: 200%; 
+    
+    
+}
+.about p {  
+ 
+    
+}   
+#work {
+}
+/* Footer =========================== */
+
+
+#contact {
+   overflow: auto;
+    padding-bottom: 40px;
+}
+#contact-img{
+    padding: 0 0 20px 0;
+    margin: 0;
+    min-width: 100px;
+    max-width: 400px;
+}
+#contact-info{
+  padding: 20px 0 0 0;
+}  
+#contact h2, #contact h3 {
+  
+}
+
+
+    
+/*#contact-info ul{
+    clear: both;
+}*/
     
 }
 @media only screen and (min-width: 35em) {
