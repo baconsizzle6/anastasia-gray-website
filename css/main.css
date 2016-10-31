@@ -102,7 +102,6 @@ html, body{
     color: #000;
     background-color: #fff;
     min-width: 340px;
-
 }
 a{
     text-decoration: none;
@@ -113,7 +112,6 @@ a:hover{
 }
 
 p{
-    color: #222;
     font-size: 1.1em;
 }
 h1, h2, h3 {
@@ -143,10 +141,12 @@ span {
 }
 
 #about {
-    padding: 0 10px ;
+    padding: 0 20px ;
 }
 #work {
     background-color: #f9ceb7;
+    text-align: center;
+    padding: 20px 0;
 }
 #contact {
     background-color: #ebebeb;
@@ -165,6 +165,7 @@ span {
 }
 .third-width {
     width: 100%;
+    padding-top: 10px;
 }
 
 
@@ -175,9 +176,6 @@ span {
     padding: 20px 0 5px 0;
     color: #bbc085;
     font-size: 2.25em;
-}
-nav {
-    width: 100%;
 }
 nav ul {
     list-style: none;
@@ -195,16 +193,14 @@ nav ul li a {
     text-transform: uppercase;
     display: block;
 }
-header {
-    
-}
+
 header h2 {
     clear: both;
     text-align: center;
     font-size: 2.5em;
-    color:#bbc085;
+    color:#9a9b9b;
     margin: 0 auto;
-    padding: 50px 0 250px 0;
+    padding: 50px 10px 250px 10px;
     background-image: url("../img/hero.png");
     background-repeat:no-repeat;
     background-size: cover; 
@@ -216,16 +212,12 @@ header span {
 
 /****** Main Section ******/
 #about p {
+    color: #7f7f7f;
     margin: 30px 0;
     line-height: 1.5em;
 }
-#icon-img {
-    
-}
-#work {
-    text-align: center;
-    padding: 20px 0 20px 0;
-}
+
+
 #work img{
     width: 15%;
 }
@@ -233,11 +225,10 @@ header span {
     padding: 15px 0 0 0;
 }
 #work p {
-    line-height: 1.5em;
+    font-family: 'Lora',serif;
+    font-size: 1em;
+    line-height: 1.6em;
     padding: 0 20px 0 20px;
-}
-.third-width {
-    padding-top: 10px;
 }
 
 /****** Footer ******/
@@ -253,9 +244,6 @@ header span {
     margin: 20px 0 0 0;
 }
 
-#contact-info{ 
-    display: inline; 
-}
 #contact-info h2 {
     margin-bottom: 1px;
 }
@@ -379,7 +367,7 @@ header span {
    ========================================================================== */
 
 
-/** Tablet **/
+/****** Tablet Styles ******/
 @media (min-width:768px) {
     
 /* GRID =========================== */
@@ -400,16 +388,17 @@ header {
     background-size: cover; 
     background-position:center;
 }   
+
 #logo {
     width: 98%; 
     float: left;
     text-align: left;
     font-size: 1.75em;
-    padding: 5% 0 0 2%;
+    padding: 7% 0 0 2%;
 }
 header nav {
     width: 100%;
-    padding: 5% 0 0 0;
+    padding: 4% 0 0 0;
 }  
 
 nav ul li {
@@ -420,48 +409,67 @@ nav ul li {
     float: right;
 }
 header h2 {
- font-size: 3em;       
+    font-size: 3em;  
+    padding-left: 2%;
 }
 
 /* Main Section =========================== */
     
 #about{
     overflow: auto;
-    
+    padding: 20px 20px 10px 20px; 
 }
 
 #about h2 {
-   width: 200%; 
-    
-    
+    float: left;
+    width: 100%;
+    margin: 0 auto;
 }
-.about p {  
- 
-    
-}   
+#about p {
+    margin: 50px 20px 20px 0; 
+    }
 #work {
 }
 /* Footer =========================== */
 
 
 #contact {
-   overflow: auto;
-    padding-bottom: 40px;
+    overflow: auto; 
+    padding: 10px 20px 40px 20px;
+    
 }
 #contact-img{
     padding: 0 0 20px 0;
     margin: 0;
     min-width: 100px;
-    max-width: 400px;
+    max-width: 600px;
 }
 #contact-info{
-  padding: 20px 0 0 0;
+    padding: 20px 0 0 0;
 }  
-#contact h2, #contact h3 {
-  
-}
 
+/****** Desktop Styles ******/
+    @media (min-width:1024px){
+        
+/* GRID =========================== */
 
+        .third-width {
+            width: 33%;
+            float: left;
+            margin: 0 auto;
+        }
+/* Main Section =========================== */
+        #about, #work, #contact{
+            height: 600px;
+        }
+
+        
+    }
+    
+    
+    
+    
+    
     
 /*#contact-info ul{
     clear: both;
