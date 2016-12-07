@@ -200,8 +200,8 @@ header h2 {
     font-size: 2.5em;
     color:#9a9b9b;
     margin: 0 auto;
-    padding: 50px 10px 250px 10px;
-    background-image: url("../img/road.jpg");
+    padding: 50px 15px 250px 15px;
+    background-image: url("../img/hero.png");
     background-repeat:no-repeat;
     background-size: cover cover; 
     background-position:center;
@@ -211,15 +211,21 @@ header span {
 }
 
 /****** Main Section ******/
+#about{
+    padding-top: 30px;
+}
 #about h2 {
     font-size: 1.8em;
 }
 #about p {
     color: #7f7f7f;
     margin: 30px 0;
+    padding: 0 5px 20px 0;
     line-height: 1.6em;
 }
-
+#work{
+    padding-top: 30px;
+}
 #work img{
     width: 15%;
 }
@@ -234,7 +240,10 @@ header span {
 }
 
 /****** Footer ******/
-
+#contact{
+    padding-top: 30px;
+    padding-bottom: 120px;
+}
 #contact-img {
     margin: 0 auto;
     min-width: 50px;
@@ -246,7 +255,9 @@ header span {
     margin: 20px 0 0 0;
     max-width: 600px;
 }
-
+#contact-info{
+    padding-top: 50px;
+}
 #contact-info h2 {
     margin-bottom: 1px;
 }
@@ -407,7 +418,7 @@ header nav {
 
 nav ul li {
     text-align: none;
-    padding: 0px 5% 0 10%;
+    padding: 0px 25px 0 40px;
     margin: 18px 0px 0 10px;
     border-bottom: none;
     float: right;
@@ -446,7 +457,7 @@ header h2 {
 }
 
 #contact-info{
-    padding: 20px 0 0 0;
+    padding: 25px 0 0 0;
 }  
 
 /****** Desktop Styles ******/
